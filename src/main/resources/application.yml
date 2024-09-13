@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:Mongo3988@localhost:27017/
+      database: orderdb
+  threads:
+    virtual:
+      enabled: true
+
+services:
+  product:
+    baseUrl: https://jsonplaceholder.typicode.com
+
+logging:
+  level:
+    org.code: warn
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
